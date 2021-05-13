@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>code {O} colab</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="jQuery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel=stylesheet href="styles.css"/>
+</head>
+<body>
+<!--   Nav Bar  -->
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid d-flex justify-content-center">
+        <span class="navbar-brand mb-0 h1">code {O} colab</span>
+      </div>
+    </nav>
+<!--   Buttons Panel    -->
+     <div class="d-flex justify-content-center main-buttons">
+         <button id="html" type="button" class="btn btn-outline-secondary active">HTML</button>
+         <button id="css" type="button" class="btn btn-outline-secondary">CSS</button>
+         <button id="javascript" type="button" class="btn btn-outline-secondary">JAVASCRIPT</button>
+         <button id="output" type="button" class="btn btn-outline-secondary active">OUTPUT</button>
+     </div>
+     
+<!--     Main Container    -->
+    <div class="container-fluid pos">
+<!--  Introductory Text Container   -->
+     <div id="introText" class = "container-fluid intro hide">
+         <h1>
+          <a href="index.html" style="color: #2C2827; font-weight: bolder;" class="typewrite" data-period="2000" data-type='[ "Hey Developer!", "Wanna code HTML?", "Wanna code CSS?", "Wanna code JS?", "Switch to code {O} colab Right Now!!" ]'>
+            <span class="wrap"></span>
+          </a>
+        </h1>
+     </div>
+     
+<!--    Panels Container   -->
+    <div class="container-fluid">
+<!--    HTML Panel      -->
+       <div id="htmlPanel" class="col-md-6 float-left center">
+            <div class="form-group shadow-textarea">
+              <label for="htmlP"><strong>HTML</strong></label>
+              <textarea class="form-control z-depth-1" id="htmlP" rows="25" placeholder="Write your code here..."><p id="paragraph">Hello World!</p></textarea>
+            </div>
+        </div>
+<!--    CSS Panel   -->
+        <div id="cssPanel" class="col-md-6 float-left center hidden">
+            <div class="form-group shadow-textarea">
+              <label for="cssP"><strong>CSS</strong></label>
+              <textarea class="form-control z-depth-1" id="cssP" rows="25" placeholder="Write CSS code here...">p { color : red; }</textarea>
+            </div>
+        </div>
+<!--      JavaScript Panel    -->
+        <div id="javascriptPanel" class="col-md-6 float-left center hidden">
+            <div class="form-group shadow-textarea">
+              <label for="javascriptP"><strong>JavaScript</strong></label>
+              <textarea class="form-control z-depth-1" id="javascriptP" rows="25" placeholder="Write Javascript code here...">document.getElementById("paragraph").innerHTML = "Hello Pratyush!";</textarea>
+            </div>
+        </div>
+<!--     Output Panel    -->
+        <div id="outputPanel" class="col-md-6 float-left center">
+            <div class="form-group shadow-textarea">
+              <label for="outputP"><strong>OUTPUT</strong></label>
+              <iframe class="form-control z-depth-1" id="outputP" style="height: 614px" placeholder="Write something here..."></iframe>
+            </div>
+        </div>
+    </div>
+    </div>
+<!--   Including Javascript     -->
+       <script type="text/javascript" src="jScript.js"> </script> 
+</body>
+</html>
+
+
+<!-------------------------------- THE END --------------------------------->
